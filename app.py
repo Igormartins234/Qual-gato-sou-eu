@@ -13,7 +13,7 @@ def index():
     nome = request.form.get('nome', None)
 
     if not nome:
-        return render_template('index.html', error='Nome é obrigatório')
+        return render_template('index.html', erro='Nome é obrigatório')
 
     response = requests.get(API_ENDPOINT)
 
@@ -23,7 +23,7 @@ def index():
         return render_template('index.html', nome=nome, url_imagem=url_imagem)
     else:
         print(response.status_code)
-        return render_template('index.html', error='Erro ao buscar imagem')
+        return render_template('index.html', erro='Erro ao buscar imagem', nome=nome)
 
 if __name__ == '__main__':
     app.run(debug=True)

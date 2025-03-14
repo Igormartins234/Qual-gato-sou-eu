@@ -100,7 +100,7 @@ main {
     background-color: #fff;
 }
 
-.gato img {
+.gatos {
     width: 100%;
     height: 350px;
     object-fit: cover;
@@ -124,4 +124,12 @@ footer {
     background-color: #FFDC64;
     color: #54325C;
     text-align: center;
+}
+#gatop {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3000px;
 }

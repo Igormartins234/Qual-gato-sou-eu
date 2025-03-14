@@ -23,9 +23,9 @@
             </div>
             <div class="gato">
                 {% if not url_imagem %}
-                    <img src="..." alt="...">
+                    <img src="../static/img3.webp" id="gatop">
                 {% else %}
-                    <img src="{{ url_imagem }}"/>
+                    <img src="{{ url_imagem }}"class="gatos"
                 {% endif %}
                 <p>{{ nome }}</p>
                 {% if erro %}
